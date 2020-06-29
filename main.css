@@ -1,0 +1,91 @@
+body{
+    color:red;
+}
+
+* { 
+    font-family: verdana,sans-serif; 
+}
+
+div p { 
+    border: 1px solid red; 
+}
+
+div > span { 
+    color:blue; 
+}
+
+div + p { 
+    color: green; 
+}
+
+div ~ p { 
+    border: 1px solid yellow; 
+}
+
+[id] { 
+    color: lightblue; 
+}
+
+[disabled]{
+    color:lightgrey;
+}
+
+[id="container"] { 
+    border: 1px solid lightsalmon; 
+}
+
+[class~="error"] {
+     color: red; 
+}
+
+[id|="main"] {
+     color: lightgoldenrodyellow; 
+}
+
+[href^="https"] { 
+    color: lightseagreen; 
+}
+
+li:first-child{
+    color:lime;
+}
+
+ol > li:nth-child(even){
+    color:sandybrown;
+}
+
+:checked{
+    width: 30px; height: 30px;
+}
+
+:checked + label{
+    color:yellowgreen;
+}
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  q::before {
+    content: "«";
+    color: blue;
+   }
+   q::after {
+    content: "»";
+    color: red;
+   }
